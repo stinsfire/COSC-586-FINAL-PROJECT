@@ -102,21 +102,3 @@ backend=Aer.get_backend('qasm_simulator')
 quantum_instance=QuantumInstance(backend,shots=1000)
 factors_of_21=Shor(N=21,a=8,quantum_instance=quantum_instance)
 print('factors of 21 using quantum computer are {}'.format(Shor.run(factors_of_21)))
-
-# FINDING FACTORS OF 61
-backend=Aer.get_backend('qasm_simulator')
-quantum_instance=QuantumInstance(backend,shots=1000)
-factors_of_61=Shor(N=61,a=4,quantum_instance=quantum_instance)
-print('factors of 61 using quantum computer are {}'.format(Shor.run(factors_of_61)))
-
-# FINDING FACTORS OF 35
-backend=Aer.get_backend('qasm_simulator')
-quantum_instance=QuantumInstance(backend,shots=1000)
-factors_of_35=Shor(N=35,a=8,quantum_instance=quantum_instance)
-print('factors of 35 using quantum computer are {}'.format(Shor.run(factors_of_35)))
-
-# FINDING FACTORS OF 91
-backend=Aer.get_backend('qasm_simulator')
-quantum_instance=QuantumInstance(backend,shots=1000)
-factors_of_91=Shor(N=91,a=6,quantum_instance=quantum_instance)
-print('factors of 91 using quantum computer are {}'.format(Shor.run(factors_of_91)))
